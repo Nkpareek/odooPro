@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <style>        
-        .nav-pills {
+        /* .nav-pills {
             background-color: rgba(227, 136, 43, .7);
             border: 1px solid #dee2e6;
             border-radius: 4rem;
@@ -43,6 +43,9 @@
             height: 2.7rem;
             border-radius: 2rem;
             transition: left .4s ease, background-position .4s ease;
+        } */
+        #pills-tab .nav-link.active {
+            background-color: #fff !important;
         }
     </style>
     <script>
@@ -64,8 +67,8 @@
 
 <body>
     <!-- HERO -->
-    <div class="container" style="width:84vw;background: -o-linear-gradient(353deg, hsl(24.92deg 100% 93.66%), hsl(27.14deg 100% 98.15%) 30%, hsl(29.35deg 100% 93.15%) 52%, hsl(23.92deg 100% 89.7% / 91%) 70%, hsl(29.35deg 100% 89.53%));
-    background: linear-gradient(97deg, hsl(24.92deg 100% 93.66%), hsl(27.14deg 100% 98.15%) 30%, hsl(29.35deg 100% 93.15%) 52%, hsl(23.92deg 100% 89.7% / 91%) 70%, hsl(29.35deg 100% 89.53%));">        
+    <div class="container position-relative overflow-hidden p-0" style="width:84vw;">     
+        <img src="./bg-img1.png" class="position-absolute z-n1" />   
         <div class="row" style="padding: 4rem 2.5rem; padding-bottom: 2rem;">
             <div class="col-lg-12 d-flex flex-column align-items-center">               
                 <a href="javascript:void(0);" target="_blank"
@@ -85,9 +88,9 @@
         </div>                    
     </div>
 
-    <div class="container" style="width:84vw;padding: 3rem 2.5rem;background: -o-linear-gradient(353deg, hsl(28.3deg 100% 89.61%), hsl(25.71deg 100% 93.66%) 30%, hsl(26.4deg 100% 92.46%) 52%, hsl(27.69deg 100% 92.35%) 70%, hsl(26.67deg 100% 94.01%));
-   background: linear-gradient(97deg, hsl(28.3deg 100% 89.61%), hsl(25.71deg 100% 93.66%) 30%, hsl(26.4deg 100% 92.46%) 52%, hsl(27.69deg 100% 92.35%) 70%, hsl(26.67deg 100% 94.01%));">
-        <section>
+    <div class="container position-relative overflow-hidden p-0" style="width:84vw;">
+        <img src="./bg-img2.png" class="position-absolute z-n1" />   
+        <section style="padding: 3rem 2.5rem;">
             <h2 style="text-align: center;">About MMC Convert</h2>
             <div class="row py-4">
                 <div class="col-lg-6 d-flex justify-content-end align-items-center">
@@ -107,9 +110,9 @@
         </div>
     </div>    
 
-    <div class="container" style="width:84vw;padding: 3rem 2.5rem;background: -o-linear-gradient(353deg, hsl(24.92deg 100% 93.66%), hsl(27.14deg 100% 98.15%) 30%, hsl(29.35deg 100% 93.15%) 52%, hsl(23.92deg 100% 89.7% / 91%) 70%, hsl(29.35deg 100% 89.53%));
-    background: linear-gradient(97deg, hsl(24.92deg 100% 93.66%), hsl(27.14deg 100% 98.15%) 30%, hsl(29.35deg 100% 93.15%) 52%, hsl(23.92deg 100% 89.7% / 91%) 70%, hsl(29.35deg 100% 89.53%));">
-        <section>            
+    <div class="container position-relative overflow-hidden p-0" style="width:84vw;">
+        <img src="./bg-img1.png" class="position-absolute z-n1" />   
+        <section style="padding: 3rem 2.5rem;">            
                 <h2 class="text-center">
                     Key Highlights
                 </h2>
@@ -144,14 +147,15 @@
         </section>
     </div>
 
-    <div class="container" style="width:84vw;padding: 3rem 2.5rem;background: -o-linear-gradient(353deg, hsl(28.3deg 100% 89.61%), hsl(25.71deg 100% 93.66%) 30%, hsl(26.4deg 100% 92.46%) 52%, hsl(27.69deg 100% 92.35%) 70%, hsl(26.67deg 100% 94.01%));
-   background: linear-gradient(97deg, hsl(28.3deg 100% 89.61%), hsl(25.71deg 100% 93.66%) 30%, hsl(26.4deg 100% 92.46%) 52%, hsl(27.69deg 100% 92.35%) 70%, hsl(26.67deg 100% 94.01%));">
-        <section>
+    <div class="container position-relative overflow-hidden p-0" style="width:84vw;">
+        <img src="./bg-img2.png" class="position-absolute z-n1" />   
+        <section style="padding: 3rem 2.5rem;">
             <h2 style="text-align: center;">Our Features</h2>            
             <div class="row mt-4">
                     <div class="col-md-4 col-sm-12">
                         <div class="bg-white shadow card p-4"
-                            style="border-radius:10px;height: 100%">                                                                                                
+                            style="border-radius:10px;height: 100%">          
+                                    <img src="./data-modification.png" style="width: auto;height: 12rem;margin: 0 auto;margin-bottom: 1rem;" />                                                                                         
                                     <h5 style="color:#000000; font-size: 18px;"
                                         class="mb-2">
                                         Data Modification
@@ -161,7 +165,8 @@
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="bg-white shadow card p-4"
-                            style="border-radius:10px;height: 100%">                                                                                                
+                            style="border-radius:10px;height: 100%">  
+                                    <img src="./data-deletion.png" style="width: auto;height: 12rem;margin: 0 auto;margin-bottom: 1rem;" />                                                                                              
                                     <h5 style="color:#000000; font-size: 18px;"
                                         class="mb-2">
                                         Data Deletion
@@ -171,7 +176,8 @@
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="bg-white shadow card p-4"
-                            style="border-radius:10px;height: 100%">                                                                                                
+                            style="border-radius:10px;height: 100%">  
+                                    <img src="./data-import.png" style="width: auto;height: 12rem;margin: 0 auto;margin-bottom: 1rem;" />                                                                                              
                                     <h5 style="color:#000000; font-size: 18px;"
                                         class="mb-2">
                                         Data Import
@@ -183,174 +189,201 @@
         </section>
     </div>
     
-    <div class="container" style="width:84vw;padding: 3rem 2.5rem;background: -o-linear-gradient(353deg, hsl(28.3deg 100% 89.61%), hsl(25.71deg 100% 93.66%) 30%, hsl(26.4deg 100% 92.46%) 52%, hsl(27.69deg 100% 92.35%) 70%, hsl(26.67deg 100% 94.01%));
-   background: linear-gradient(97deg, hsl(28.3deg 100% 89.61%), hsl(25.71deg 100% 93.66%) 30%, hsl(26.4deg 100% 92.46%) 52%, hsl(27.69deg 100% 92.35%) 70%, hsl(26.67deg 100% 94.01%));">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="background-color: rgba(227, 136, 43, .7); border: 1px solid #dee2e6; border-radius: 4rem; cursor: pointer; height: 3.5rem; width: 20rem; display: flex; align-items: center; flex-wrap: nowrap; gap: 0.3rem; padding: 0rem 0.4rem; margin: 0 auto;">
-            <li class="nav-item" style="width: 50%;">
-              <!-- <button class="nav-link active" id="odoo-tab" data-bs-toggle="pill" data-bs-target="#odoo-steps" type="button" role="tab" aria-controls="odoo-steps" aria-selected="true">Odoo</button> -->
-              <a href="#odoo-steps" id="odoo-tab" aria-selected="true" style="color: #000; font-size: 1.1rem; font-weight: 500; text-align: center; width: 100%; height: 2.7rem; border-radius: 2rem; transition: left .4s ease, background-position .4s ease;" data-bs-toggle="pill" aria-expanded="true" data-bs-target="#odoo-steps" role="tab" class="nav-link active"
-                            style="">
-                            Odoo
-                        </a>
-            </li>
-            <li class="nav-item" style="width: 50%;">
-              <!-- <button class="nav-link" id="tally-tab" data-bs-toggle="pill" data-bs-target="#tally-steps" type="button" role="tab" aria-controls="tally-steps" aria-selected="false">Tally</button> -->
-              <a href="#tally-steps" id="tally-tab" aria-selected="true" style="color: #000; font-size: 1.1rem; font-weight: 500; text-align: center; width: 100%; height: 2.7rem; border-radius: 2rem; transition: left .4s ease, background-position .4s ease;" data-bs-toggle="pill" aria-expanded="true" data-bs-target="#tally-steps" role="tab" class="nav-link"
-              style="">
-              Tally
-          </a>
-            </li>            
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="odoo-steps" role="tabpanel" aria-labelledby="odoo-tab" tabindex="0">
-                <div class="row mt-5">                    
-                    <div class="col-md-6 col-sm-12">                        
-                        <h2>
-                            Discover the Power of Our Products
-                        </h2>
-                        <p>Transform your accounting with powerful automation tools and streamline your processes for efficiency and accuracy</p>
-                    </div>
-                    <div class="col-md-6 col-sm-12 align-self-center">
-                        <div class="product-card shadow bg-white p-4 mb-4 rounded">
-                            <h4 style="font-size: 21px;">Upload Your File <strong>01</strong></h4>
-                            <p></p>
-                        </div>   
-                        <div class="product-card shadow bg-white p-4 mb-4 rounded">
-                            <h4 style="font-size: 21px;">Choose Destination <strong>02</strong></h4>
-                            <p>Convert Excel data to Zoho Books easily with our user-friendly guide. Enjoy smooth, accurate transfers.</p>
-                        </div>   
-                        <div class="product-card shadow bg-white p-4 rounded">
-                            <h4 style="font-size: 21px;">Initiate Conversion <strong>03</strong></h4>
-                            <p>Convert Excel data to Zoho Books easily with our user-friendly guide. Enjoy smooth, accurate transfers.</p>
-                        </div>                                                  
+    <div class="container position-relative overflow-hidden p-0" style="width:84vw;">
+        <img src="./bg-img1.png" class="position-absolute z-n1" />  
+        <section style="padding: 3rem 2.5rem;">
+            <h2 style="text-align: center;" class="mb-4">How to convert CSV & Tally Files to Odoo</h2>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="background-color: rgba(227, 136, 43, .7); border: 1px solid #dee2e6; border-radius: 4rem; cursor: pointer; height: 3.5rem; width: 20rem; display: flex; align-items: center; flex-wrap: nowrap; gap: 0.3rem; padding: 0rem 0.4rem; margin: 0 auto;">
+                <li class="nav-item" style="width: 50%;">
+                  <!-- <button class="nav-link active" id="odoo-tab" data-bs-toggle="pill" data-bs-target="#odoo-steps" type="button" role="tab" aria-controls="odoo-steps" aria-selected="true">Odoo</button> -->
+                  <a href="#excel-csv-steps" id="excel-csv-tab" aria-selected="true" style="color: #000; font-size: 1.1rem; font-weight: 500; text-align: center; width: 100%; height: 2.7rem; border-radius: 2rem; transition: left .4s ease, background-position .4s ease;" data-bs-toggle="pill" aria-expanded="true" data-bs-target="#excel-csv-steps" role="tab" class="nav-link active">
+                                Excel
+                            </a>
+                </li>
+                <li class="nav-item" style="width: 50%;">
+                  <!-- <button class="nav-link" id="tally-tab" data-bs-toggle="pill" data-bs-target="#tally-steps" type="button" role="tab" aria-controls="tally-steps" aria-selected="false">Tally</button> -->
+                  <a href="#tally-steps" id="tally-tab" aria-selected="true" style="color: #000; font-size: 1.1rem; font-weight: 500; text-align: center; width: 100%; height: 2.7rem; border-radius: 2rem; transition: left .4s ease, background-position .4s ease;" data-bs-toggle="pill" aria-expanded="true" data-bs-target="#tally-steps" role="tab" class="nav-link">
+                  Tally
+              </a>
+                </li>            
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="excel-csv-steps" role="tabpanel" aria-labelledby="excel-csv-tab" tabindex="0">
+                    <div class="row mt-5">                    
+                        <div class="col-md-6 col-sm-12">                        
+                            <h2>
+                                Convert CSV to Odoo
+                            </h2>
+                            <p>Follow these steps to convert and import data from CSV files into Odoo. Upload your file, choose the function, and map the columns. This method is ideal for spreadsheet-based data.</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12 align-self-center">
+                            <div class="product-card shadow bg-white p-4 mb-4 rounded" style="transform: rotate(359deg);">
+                                <h4 style="font-size: 21px;display: flex;justify-content: space-between;align-items: center;">Upload CSV File <strong>01</strong></h4>
+                                <p class="mb-0">Start by uploading your CSV file to the tool, ensure the file is formatted correctly for seamless processing, click the "Upload" button to proceed to the next step.</p>
+                            </div>   
+                            <div class="product-card shadow bg-white p-4 mb-4 rounded" style="transform: rotate(2deg);">
+                                <h4 style="font-size: 21px;display: flex;justify-content: space-between;align-items: center;">Select Your Function<strong>02</strong></h4>
+                                <p class="mb-0">Choose the Odoo function or module that fits your data, this ensures the data is processed correctly within Odoo, review your selection before moving forward.</p>
+                            </div>   
+                            <div class="product-card shadow bg-white p-4 rounded" style="transform: rotate(359deg);">
+                                <h4 style="font-size: 21px;display: flex;justify-content: space-between;align-items: center;">Map Columns<strong>03</strong></h4>
+                                <p class="mb-0">Align your file's columns with the corresponding Odoo fields, double-check that each column is correctly mapped, once done, proceed to generate the final Odoo-compatible file.</p>
+                            </div>                                                  
+                        </div>     
                     </div>     
-                </div>     
-            </div>            
-            <div class="tab-pane fade" id="tally-steps" role="tabpanel" aria-labelledby="tally-tab" tabindex="0">
-                All Tally Data
-            </div>
-        </div>        
+                </div>            
+                <div class="tab-pane fade" id="tally-steps" role="tabpanel" aria-labelledby="tally-tab" tabindex="0">
+                    <div class="row mt-5" style="overflow: auto;max-height: calc(100vh - 5rem);">                    
+                        <div class="col-md-6 col-sm-12">                        
+                            <h2>                                
+                                Transfer Data from Tally to Odoo
+                            </h2>
+                            <p class="mb-0">Learn how to transfer data from Tally to Odoo using our tool. Start by adding the TDL to Tally, export the necessary data, and then import it into Odoo. This method is perfect for moving financial data from Tally to Odoo.</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="product-card shadow bg-white p-4 mb-5 rounded" style="transform: rotate(359deg);position: sticky;top: 2rem;z-index: 1;">
+                                <h4 style="font-size: 21px;display: flex;justify-content: space-between;align-items: center;">Add TDL<strong>01</strong></h4>
+                                <p class="mb-0">Integrate the TDL (Tally Definition Language) into your Tally system, this enables seamless data export from Tally, ensure the TDL is correctly installed for accurate data extraction.</p>
+                            </div>   
+                            <div class="product-card shadow bg-white p-4 mb-3 rounded" style="transform: rotate(0.8deg);position: sticky;top: 2rem;z-index: 1;">
+                                <h4 style="font-size: 21px;display: flex;justify-content: space-between;align-items: center;">Tally to Odoo<strong>02</strong></h4>
+                                <p class="mb-0">Export your data from Tally using the integrated TDL, prepare the exported data for conversion to Odoo format, verify the data before moving to the next step.</p>
+                            </div>   
+                            <div class="product-card shadow bg-white p-4 mb-3 rounded" style="transform: rotate(359deg);position: sticky;top: 2rem;z-index: 1;">
+                                <h4 style="font-size: 21px;display: flex;justify-content: space-between;align-items: center;">Login with MMC<strong>03</strong></h4>
+                                <p class="mb-0">Log in to the Odoo system using your MMC (Master Management Console) credentials, this ensures secure access to the Odoo environment, confirm your login to proceed with the data transfer, add company name and Tally serial number while filling and created new company in MMC tool.
+                                    </p>
+                            </div>      
+                            <div class="product-card shadow bg-white p-4 mb-4 rounded" style="transform: rotate(0.8deg);position: sticky;top: 2rem;z-index: 1;">
+                                <h4 style="font-size: 21px;display: flex;justify-content: space-between;align-items: center;">Send Data<strong>04</strong></h4>
+                                <p class="mb-0">Initiate the data transfer from Tally to Odoo, monitor the transfer process to ensure all data is correctly sent, verify the data in Odoo after the transfer is complete.</p>
+                            </div>                               
+                        </div>     
+                    </div>     
+                </div>
+            </div>   
+        </section>     
     </div>
         
-    <section class="container" style="width:84vw;padding: 3rem 2.5rem;background: linear-gradient(97deg, hsl(24.92deg 100% 93.66%), hsl(27.14deg 100% 98.15%) 30%, hsl(29.35deg 100% 93.15%) 52%, hsl(23.92deg 100% 89.7% / 91%) 70%, hsl(29.35deg 100% 89.53%));">
-                      
+    <section class="container position-relative overflow-hidden p-0" style="width:84vw;">
+        <img src="./bg-img2.png" class="position-absolute z-n1" />   
+        <div style="padding: 3rem 2.5rem;">
             <h2 class="text-center">
                 Our Services
-            </h2>  
-
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
-                    <div class="d-flex justify-content-center align-items-center mx-3 my-3"
-                        style="background-color:#1dd1a1 !important; border-radius:15px !important; height:80px; width:80px">
-                        <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/cogs.png?aedef96"
-                            class="img-responsive" height="48px" width="48px">
+            </h2>              
+                <div class="row">
+                    <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
+                        <div class="d-flex justify-content-center align-items-center mx-3 my-3"
+                            style="background-color:#1dd1a1 !important; border-radius:15px !important; height:80px; width:80px">
+                            <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/cogs.png?aedef96"
+                                class="img-responsive" height="48px" width="48px">
+                        </div>
+                        <h6 class="text-center"
+                            style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
+                            Odoo
+                            Customization</h6>
                     </div>
-                    <h6 class="text-center"
-                        style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
-                        Odoo
-                        Customization</h6>
-                </div>
-                <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
-                    <div class="d-flex justify-content-center align-items-center mx-3 my-3"
-                        style="background-color:#ff6b6b !important; border-radius:15px !important; height:80px; width:80px">
-                        <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/wrench.png?aedef96"
-                            class="img-responsive" height="48px" width="48px">
+                    <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
+                        <div class="d-flex justify-content-center align-items-center mx-3 my-3"
+                            style="background-color:#ff6b6b !important; border-radius:15px !important; height:80px; width:80px">
+                            <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/wrench.png?aedef96"
+                                class="img-responsive" height="48px" width="48px">
+                        </div>
+                        <h6 class="text-center"
+                            style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
+                            Odoo
+                            Implementation</h6>
                     </div>
-                    <h6 class="text-center"
-                        style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
-                        Odoo
-                        Implementation</h6>
-                </div>
-                <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
-                    <div class="d-flex justify-content-center align-items-center mx-3 my-3"
-                        style="background-color:#6462CD !important; border-radius:15px !important; height:80px; width:80px">
-                        <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/lifebuoy.png?aedef96"
-                            class="img-responsive" height="48px" width="48px">
+                    <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
+                        <div class="d-flex justify-content-center align-items-center mx-3 my-3"
+                            style="background-color:#6462CD !important; border-radius:15px !important; height:80px; width:80px">
+                            <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/lifebuoy.png?aedef96"
+                                class="img-responsive" height="48px" width="48px">
+                        </div>
+                        <h6 class="text-center"
+                            style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
+                            Odoo
+                            Support</h6>
                     </div>
-                    <h6 class="text-center"
-                        style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
-                        Odoo
-                        Support</h6>
-                </div>
-                <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
-                    <div class="d-flex justify-content-center align-items-center mx-3 my-3"
-                        style="background-color:#ffa801 !important; border-radius:15px !important; height:80px; width:80px">
-                        <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/user.png?aedef96"
-                            class="img-responsive" height="48px" width="48px">
+                    <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
+                        <div class="d-flex justify-content-center align-items-center mx-3 my-3"
+                            style="background-color:#ffa801 !important; border-radius:15px !important; height:80px; width:80px">
+                            <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/user.png?aedef96"
+                                class="img-responsive" height="48px" width="48px">
+                        </div>
+                        <h6 class="text-center"
+                            style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
+                            Hire
+                            Odoo
+                            Developer</h6>
                     </div>
-                    <h6 class="text-center"
-                        style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
-                        Hire
-                        Odoo
-                        Developer</h6>
-                </div>
-                <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
-                    <div class="d-flex justify-content-center align-items-center mx-3 my-3"
-                        style="background-color:#54a0ff  !important; border-radius:15px !important; height:80px; width:80px">
-                        <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/puzzle.png?aedef96"
-                            class="img-responsive" height="48px" width="48px">
+                    <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
+                        <div class="d-flex justify-content-center align-items-center mx-3 my-3"
+                            style="background-color:#54a0ff  !important; border-radius:15px !important; height:80px; width:80px">
+                            <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/puzzle.png?aedef96"
+                                class="img-responsive" height="48px" width="48px">
+                        </div>
+                        <h6 class="text-center"
+                            style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
+                            Odoo
+                            Integration</h6>
                     </div>
-                    <h6 class="text-center"
-                        style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
-                        Odoo
-                        Integration</h6>
-                </div>
-                <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
-                    <div class="d-flex justify-content-center align-items-center mx-3 my-3"
-                        style="background-color:#6d7680 !important; border-radius:15px !important; height:80px; width:80px">
-                        <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/update.png?aedef96"
-                            class="img-responsive" height="48px" width="48px">
+                    <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
+                        <div class="d-flex justify-content-center align-items-center mx-3 my-3"
+                            style="background-color:#6d7680 !important; border-radius:15px !important; height:80px; width:80px">
+                            <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/update.png?aedef96"
+                                class="img-responsive" height="48px" width="48px">
+                        </div>
+                        <h6 class="text-center"
+                            style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
+                            Odoo
+                            Migration</h6>
                     </div>
-                    <h6 class="text-center"
-                        style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
-                        Odoo
-                        Migration</h6>
-                </div>
-                <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
-                    <div class="d-flex justify-content-center align-items-center mx-3 my-3"
-                        style="background-color:#786fa6 !important; border-radius:15px !important; height:80px; width:80px">
-                        <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/consultation.png?aedef96"
-                            class="img-responsive" height="48px" width="48px">
+                    <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
+                        <div class="d-flex justify-content-center align-items-center mx-3 my-3"
+                            style="background-color:#786fa6 !important; border-radius:15px !important; height:80px; width:80px">
+                            <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/consultation.png?aedef96"
+                                class="img-responsive" height="48px" width="48px">
+                        </div>
+                        <h6 class="text-center"
+                            style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
+                            Odoo
+                            Consultancy</h6>
                     </div>
-                    <h6 class="text-center"
-                        style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
-                        Odoo
-                        Consultancy</h6>
-                </div>
-                <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
-                    <div class="d-flex justify-content-center align-items-center mx-3 my-3"
-                        style="background-color:#f8a5c2 !important; border-radius:15px !important; height:80px; width:80px">
-                        <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/training.png?aedef96"
-                            class="img-responsive" height="48px" width="48px">
+                    <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
+                        <div class="d-flex justify-content-center align-items-center mx-3 my-3"
+                            style="background-color:#f8a5c2 !important; border-radius:15px !important; height:80px; width:80px">
+                            <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/training.png?aedef96"
+                                class="img-responsive" height="48px" width="48px">
+                        </div>
+                        <h6 class="text-center"
+                            style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
+                            Odoo
+                            Implementation</h6>
                     </div>
-                    <h6 class="text-center"
-                        style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
-                        Odoo
-                        Implementation</h6>
-                </div>
-                <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
-                    <div class="d-flex justify-content-center align-items-center mx-3 my-3"
-                        style="background-color:#e6be26 !important; border-radius:15px !important; height:80px; width:80px">
-                        <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/license.png?aedef96"
-                            class="img-responsive" height="48px" width="48px">
+                    <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center my-4">
+                        <div class="d-flex justify-content-center align-items-center mx-3 my-3"
+                            style="background-color:#e6be26 !important; border-radius:15px !important; height:80px; width:80px">
+                            <img src="//apps.odoocdn.com/apps/assets/16.0/export_stockinfo_xls/assets/icons/license.png?aedef96"
+                                class="img-responsive" height="48px" width="48px">
+                        </div>
+                        <h6 class="text-center"
+                            style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
+                            Odoo
+                            Licensing Consultancy</h6>
                     </div>
-                    <h6 class="text-center"
-                        style="font-family:Montserrat, 'sans-serif' !important; font-weight:bold">
-                        Odoo
-                        Licensing Consultancy</h6>
-                </div>
-            </div>
+                </div>            
         </div>
 
 
     </section>    
 
        
-        <section class="oe_container" style="padding: 2rem 3rem 1rem; background-color: #fff !important;">
-            <div class="row" style="max-width:1540px; margin: 0 auto; margin-right: 3rem; ">
+        <section class="container position-relative overflow-hidden p-0" style="width:84vw;">
+            <img src="./bg-img1.png" class="position-absolute z-n1" />  
+            <div class="row" style="margin: 0 auto;">
                 <!-- Logo -->
-                <div class="col-lg-12 d-flex justify-content-center align-items-center" style="margin-top: 3rem;">
+                <div class="col-lg-12 p-0 d-flex justify-content-center align-items-center" style="margin-top: 3rem;margin-bottom: 1rem;">
                     <img src="./mmc_logo.png" style="width:115px" />
                 </div>
                 <!-- End of Logo -->
