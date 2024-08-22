@@ -19,7 +19,7 @@ okok
     'application': True,  # Whether the module is an application
     'auto_install':True,  # Whether the module should be auto-installed
     'images': [
-        'static/description/icon_light.png',  # Default app icon (light)
+        'static/description/banner.gif',  # Default app icon (light)
         'static/description/icon.png',  # Default app icon (light)
         'static/description/thumbnail_light.png',  # Default thumbnail (light)
         'static/description/img.png' 
