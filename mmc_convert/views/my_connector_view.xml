@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Define the Form View -->
+    <record id="view_my_connector_form" model="ir.ui.view">
+        <field name="name">my.connector.form</field>
+        <field name="model">my.connector</field>
+        <field name="arch" type="xml">
+            <form string="My Connector">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="api_key" readonly="1"/>
+                        <field name="db_name" readonly="1"/>
+                        <field name="user_name" readonly="1"/>
+                        <button name="connect_to_mmc_api" type="object" string="Connect to MMC Convert" class="oe_highlight"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Define the Tree View -->
+    <record id="view_my_connector_tree" model="ir.ui.view">
+        <field name="name">my.connector.tree</field>
+        <field name="model">my.connector</field>
+        <field name="arch" type="xml">
+            <tree string="My Connector">
+                <field name="name"/>
+                <field name="api_key"/>
+                <field name="db_name"/>
+                <field name="user_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Define the Action -->
+    <record id="action_my_connector" model="ir.actions.act_window">
+        <field name="name">My Connectors</field>
+        <field name="res_model">my.connector</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_my_connector_tree"/>
+    </record>
+
+    <!-- Define the Menu Items -->
+    <menuitem id="my_connector_menu" name="My Connector" sequence="10"/>
+    <menuitem id="my_connector_menu_main" name="My Connectors" parent="my_connector_menu" action="action_my_connector"/>
+</odoo>
